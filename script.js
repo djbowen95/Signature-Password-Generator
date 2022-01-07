@@ -1,41 +1,51 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// Create / store the user's input for character selection. 
+// If all 'false' then must give 'error' message.
 let addCaps = true;
 let addLower = true;
 let addDigits = true;
 let addSpecials = true;
 
-//Add all desired characters into a single string value.  
+// Create / store the users input for chosen length.
+// Must be more than 8 and less than 128. 
+let chosenLength = 12;
+
+//Add all desired characters into a single string value.
 function selectCharacters() {
   let chosenCharacters = "";
   if (addCaps === true) {
     const passwordCapitals = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     chosenCharacters = chosenCharacters.concat(passwordCapitals);
-    console.log(chosenCharacters);
   }
   if (addLower === true) {
-    const passwordLowercase ="abcdefghijklmnopqrstuvwxyz";
+    const passwordLowercase = "abcdefghijklmnopqrstuvwxyz";
     chosenCharacters = chosenCharacters.concat(passwordLowercase);
-    console.log(chosenCharacters);
   }
   if (addDigits === true) {
     const passwordDigits = "0123456789";
     chosenCharacters = chosenCharacters.concat(passwordDigits);
-    console.log(chosenCharacters);
   }
   if (addSpecials === true) {
     const passwordSpecialCharacters = "!\"#$%&'()*,-./:;<=>?@[]^_`{}|~";
     chosenCharacters = chosenCharacters.concat(passwordSpecialCharacters);
-    console.log(chosenCharacters);
-    console.log(passwordSpecialCharacters.length);
   }
   return chosenCharacters;
 }
 
-// Function to randomise password
+// Randomize a password of chosenLength from character pool of selectCharacters;
 function generatePassword() {
-  return selectCharacters(); 
+  let chosenCharacters = selectCharacters();
+  let totalCharOptions = chosenCharacters.length;
+  let password = "";
+  for (let passLength = 0; passLength < chosenLength; passLength++) {
+    let randNum = Math.random() * totalCharOptions;
+    let randChoice = Math.floor(randNum);
+    let newCharacter = chosenCharacters.substring(randChoice, randChoice + 1);
+    password = password.concat(newCharacter);
+  }
+  return password;
 }
 
 // Write password to the #password input
@@ -44,7 +54,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
