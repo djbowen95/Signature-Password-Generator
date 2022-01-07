@@ -1,5 +1,42 @@
-/* Assignment Code
+// Assignment Code
 var generateBtn = document.querySelector("#generate");
+
+let addCaps = true;
+let addLower = true;
+let addDigits = true;
+let addSpecials = true;
+
+//Add all desired characters into a single string value.  
+function selectCharacters() {
+  let chosenCharacters = "";
+  if (addCaps === true) {
+    const passwordCapitals = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    chosenCharacters = chosenCharacters.concat(passwordCapitals);
+    console.log(chosenCharacters);
+  }
+  if (addLower === true) {
+    const passwordLowercase ="abcdefghijklmnopqrstuvwxyz";
+    chosenCharacters = chosenCharacters.concat(passwordLowercase);
+    console.log(chosenCharacters);
+  }
+  if (addDigits === true) {
+    const passwordDigits = "0123456789";
+    chosenCharacters = chosenCharacters.concat(passwordDigits);
+    console.log(chosenCharacters);
+  }
+  if (addSpecials === true) {
+    const passwordSpecialCharacters = "!\"#$%&'()*,-./:;<=>?@[]^_`{}|~";
+    chosenCharacters = chosenCharacters.concat(passwordSpecialCharacters);
+    console.log(chosenCharacters);
+    console.log(passwordSpecialCharacters.length);
+  }
+  return chosenCharacters;
+}
+
+// Function to randomise password
+function generatePassword() {
+  return selectCharacters(); 
+}
 
 // Write password to the #password input
 function writePassword() {
@@ -11,19 +48,22 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword); */
+generateBtn.addEventListener("click", writePassword);
 
-console.log("hello")
+/*
+Function that when clicked ->
+  Runs the function writePassword
 
+
+/*
 let passwordCharacters = [];
-const passwordCapitals = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "L", "M", "N", "O", "P", "Q", "R", "S","T", "U", "V", "W", "X", "Y", "Z"];
-const passwordLowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 const passwordNumbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 // Doesn't contain the backslash ('\') character
 const passwordSpecialCharacters = ["!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "|", "}", "~"];
+    const passwordCapitals = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S","T", "U", "V", "W", "X", "Y", "Z"];
 
 let wantCapitals = ""
 wantCapitals ? console.log("hi") : console.log("bye"); //add to passwordCharacters
 
 let wantLowercase = ""
-wantLowercase ? console.log("hi") : console.log("bye"); //add to passwordCharacters
+wantLowercase ? console.log("hi") : console.log("bye"); //add to passwordCharacters */
