@@ -15,4 +15,14 @@ This was created early into my Bootcamp experience: but I have updated this READ
 - [Contribution](Contribution)
 - [Testing](Testing)
 - [License](#license)
+- [Version History](#version-history)
 - [Questions](#questions)
+
+
+## Usage
+The deployed application can be found here: 
+
+## Questions
+If you have any questions about this project, please contact me at:  
+Email: djbowen95@gmail.com  
+GitHub: [djbowen95](https://github.com/djbowen95)  
