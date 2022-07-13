@@ -20,7 +20,11 @@ This was created early into my Bootcamp experience: but I have updated this READ
 
 
 ## Usage
-The deployed application can be found here: 
+The deployed application can be found here: https://djbowen95.github.io/password-generator/  
+
+Click the 'generate' button to start the script. The script will command the browser to ask you a series of prompts (which character types do you want in your password, how long would you like the password to be).
+
+Once the prompts have been answered, the generated password should appear in the empty field. Click 'generate' below to generate a new password / start the process over again. 
 
 ## Questions
 If you have any questions about this project, please contact me at:  
