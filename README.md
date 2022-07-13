@@ -1,5 +1,8 @@
 # Password Generator
 ## 0A Introduction
+Deployed link:
+https://djbowen95.github.io/password-generator/
+
 This project was built to test fundamental Javascript principles - and to build a randomized password generator which displays in the browser. While I was given the source code for the HTML and CSS, the majority of the Javascript is my own work.
 
 I have split this READ ME file into two distinct sections - an outline of the code and how I built it; and a record of the tests I did on the code to make sure it was working as I built each element.
