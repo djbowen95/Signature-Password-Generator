@@ -26,6 +26,19 @@ Click the 'generate' button to start the script. The script will command the bro
 
 Once the prompts have been answered, the generated password should appear in the empty field. Click 'generate' below to generate a new password / start the process over again. 
 
+## Further Development
+These are some simple ideas I have for further development:
+ - Redesign the page using a CSS framework, probably Bulma
+ - Rather than prompts, use either modals or changing / reactive fields / boxes
+ - Animate - so each time a password is generated a card 'flips'
+ - Use React so that password length, etc can be stored in state
+ - Use a smart / formal design, using blacks + greys, and maybe blues, to indicate trustworthiness
+ - Bring in a font rather than the default Bulma font
+ - "Learn more" page that teaches about cyber security basic principles, ie. a password manager, that password/security checking website, following leaks + changing passwords
+ - Option to save passwords (?)
+ - Copy to clipboard button
+ - "Rate my password" webpage (completely different program)
+
 ## Questions
 If you have any questions about this project, please contact me at:  
 Email: djbowen95@gmail.com  
