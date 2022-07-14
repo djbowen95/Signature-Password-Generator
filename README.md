@@ -38,6 +38,27 @@ These are some simple ideas I have for further development:
  - Option to save passwords (?)
  - Copy to clipboard button
  - "Rate my password" webpage (completely different program)
+ - Tidy / refactor code - surely there is a simple way to do this entire thing
+ - Put into typescript / write new function logic in typescript, to practice / learn new technology
+
+ Order:
+ - Copy to clipboard button
+ - Design overall layout with Figma (?) and Bulma: generate password page
+ - Main card: flip animation
+ - Design animations for other inputs
+ - Design layout for 'more information' page
+
+ - Tidy, refactor and update code
+ - Make it into TypeScript - for password updating functions at least
+
+ - Build React app
+ - React store changes in the state
+ - React change between two pages
+ - Animate change between pages
+ - Host React application (heroku? not sure - look it up)
+
+ - Bring in sensible google fonts
+ - Recolour to a professional + secure colour scheme.
 
 ## Questions
 If you have any questions about this project, please contact me at:  
