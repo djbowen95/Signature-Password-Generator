@@ -60,6 +60,12 @@ These are some simple ideas I have for further development:
  - Bring in sensible google fonts
  - Recolour to a professional + secure colour scheme.
 
+Longer term ideas:
+ - Make this into a password manager that plugs into the browser, potentially pops up as a modal over the page
+ - Saves passwords to a database
+ - Reminders for when a password needs changing (email, notifications)
+ - Greater customisability with a special character keyboard that is both keyboard and click responsive
+
 ## Questions
 If you have any questions about this project, please contact me at:  
 Email: djbowen95@gmail.com  
