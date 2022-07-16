@@ -1,0 +1,38 @@
+{
+  "name": "signature-password-generator",
+  "version": "1.0.0",
+  "description": "Signature Password Generator is a web based application that allows users to create a fully customisable UTF-8 passcode. It is a simple, single page application designed to help users create secure, randomised, unique passwords. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djbowen95/password-generator.git"
+  },
+  "keywords": [
+    "password",
+    "generator",
+    "signature",
+    "secure",
+    "utf-8",
+    "react",
+    "jquery",
+    "typescript",
+    "DOM",
+    "manipulation",
+    "vanilla",
+    "javascript",
+    "unique",
+    "secure",
+    "security",
+    "random",
+    "randomisation"
+  ],
+  "author": "Daniel Bowen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djbowen95/password-generator/issues"
+  },
+  "homepage": "https://github.com/djbowen95/password-generator#readme"
+}

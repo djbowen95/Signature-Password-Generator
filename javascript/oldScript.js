@@ -1,5 +1,5 @@
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector("#generate"); // DONE
 
 // Alert/confirmation boxes - check if they want each type of character.
 // Could probably do this in one function, and save the results as an array. 
