@@ -34,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/djbowen95/password-generator/issues"
   },
-  "homepage": "https://github.com/djbowen95/password-generator#readme"
+  "homepage": "https://github.com/djbowen95/password-generator#readme",
+  "devDependencies": {
+    "@types/jquery": "^3.5.14"
+  }
 }
