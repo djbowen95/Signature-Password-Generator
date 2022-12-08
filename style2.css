@@ -35,4 +35,7 @@ body {
     background: url(images/fingerprint.jpeg);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    -webkit-user-select: all; /* For Safari */
+    -ms-user-select: all; /* For IE 10+ */
+    user-select: none;
 }
