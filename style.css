@@ -76,11 +76,21 @@ nav {
   background-color: black;
   color: white;
   position: absolute;
-    display: flex;
-    margin: 5px;
-    padding: 4px;
-    border: solid var(--default-white) 2px;
-    box-shadow: 2px 1px 4px var(--default-black);
+  display: flex;
+  padding: 5px;
+  border: solid white 2px;
+}
+
+nav ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav li {
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+  border: solid white 1px;
 }
 
 .card {
