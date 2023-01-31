@@ -123,11 +123,8 @@ body {
   overflow: scroll;
 }
 
-header {
-  text-align: center;
-  padding: 20px;
-  padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+nav {
+  background-color: black;
 }
 
 .card {
