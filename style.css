@@ -77,13 +77,16 @@ nav {
   color: white;
   position: absolute;
   display: flex;
+  justify-content: space-between;
   padding: 5px;
   border: solid white 2px;
+  width: 100%;
 }
 
 nav ul {
   padding: 0px;
   margin: 0px;
+
 }
 
 nav li {
