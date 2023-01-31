@@ -15,63 +15,13 @@ body,
   padding: 0;
 }
 
-.background {
-  background-image: linear-gradient(
-    45deg,
-    rgba(22, 65, 109, 0.2) 0%,
-    rgba(22, 65, 109, 0.2) 16.667%,
-    rgba(38, 134, 170, 0.36) 16.667%,
-    rgba(38, 134, 170, 0.36) 33.334%,
-    rgba(51, 153, 195, 0.39) 33.334%,
-    rgba(51, 153, 195, 0.39) 50.001%,
-    rgba(49, 194, 238, 0.37) 50.001%,
-    rgba(49, 194, 238, 0.37) 66.668%,
-    rgba(51, 153, 195, 0.39) 66.668%,
-    rgba(51, 153, 195, 0.39) 83.335%,
-    rgba(24, 127, 142, 0.35) 83.335%,
-    rgba(24, 127, 142, 0.35) 100.002%
-  ),
-  linear-gradient(
-    22.5deg,
-    rgba(22, 65, 109, 0.2) 0%,
-    rgba(22, 65, 109, 0.2) 16.667%,
-    rgba(38, 134, 170, 0.36) 16.667%,
-    rgba(38, 134, 170, 0.36) 33.334%,
-    rgba(51, 153, 195, 0.39) 33.334%,
-    rgba(51, 153, 195, 0.39) 50.001%,
-    rgba(49, 194, 238, 0.37) 50.001%,
-    rgba(49, 194, 238, 0.37) 66.668%,
-    rgba(51, 153, 195, 0.39) 66.668%,
-    rgba(51, 153, 195, 0.39) 83.335%,
-    rgba(24, 127, 142, 0.35) 83.335%,
-    rgba(24, 127, 142, 0.35) 100.002%
-  ),
-  linear-gradient(
-    0deg,
-    rgba(22, 65, 109, 0.2) 0%,
-    rgba(22, 65, 109, 0.2) 16.667%,
-    rgba(38, 134, 170, 0.36) 16.667%,
-    rgba(38, 134, 170, 0.36) 33.334%,
-    rgba(51, 153, 195, 0.39) 33.334%,
-    rgba(51, 153, 195, 0.39) 50.001%,
-    rgba(49, 194, 238, 0.37) 50.001%,
-    rgba(49, 194, 238, 0.37) 66.668%,
-    rgba(51, 153, 195, 0.39) 66.668%,
-    rgba(51, 153, 195, 0.39) 83.335%,
-    rgba(24, 127, 142, 0.35) 83.335%,
-    rgba(24, 127, 142, 0.35) 100.002%
-  ),
-  linear-gradient(90deg, rgb(205, 0, 255), rgb(205, 0, 255));
-}
-
 body {
   font-family: sans-serif;
 }
 
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+.background {
+  height: 100%;
+  width: 100%;
   background-image: linear-gradient(
     45deg,
     rgba(22, 65, 109, 0.2) 0%,
@@ -120,11 +70,17 @@ body {
   linear-gradient(90deg, rgb(205, 0, 255), rgb(205, 0, 255));
   background-color: blue;
   background-repeat: no-repeat;
-  overflow: scroll;
 }
 
 nav {
   background-color: black;
+  color: white;
+  position: absolute;
+    display: flex;
+    margin: 5px;
+    padding: 4px;
+    border: solid var(--default-white) 2px;
+    box-shadow: 2px 1px 4px var(--default-black);
 }
 
 .card {
@@ -137,6 +93,7 @@ nav {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+
 }
 
 .card-header::after {
