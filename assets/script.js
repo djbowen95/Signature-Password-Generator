@@ -1,5 +1,36 @@
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
+// Assignment code - select interactive elements from the DOM.
+const passwordButton = document.querySelector("#generate");
+const passwordDisplay = document.querySelector("#password");
+
+const characterTypes = ["capital letters", "lowercase letters", "numeric characters", "special characters"];
+const include = ["CAPS", "LOWS", "NUMS", "SPECS"];
+const dontInclude = ["NO CAPS", "NO LOWS", "NO NUMS", "NO SPECS"];
+
+const queryUser = () => {
+  let responses = [];
+  if (confirm("Do you want to include capital letters?") === true) {
+    responses.push("CAPS");
+  } else {
+    responses.push("NO CAPS");
+  }
+  if (confirm("Do you want to include lowercase leters?") === true) {
+    responses.push("LOWS");
+  } else {
+    responses.push("NO LOWS");
+  }
+  if (confirm("Do you want to include numerical characters?") === true) {
+    responses.push("NUMS");
+  } else {
+    responses.push("NO NUMS");
+  }
+  if (confirm("Do you want to include special characters?") === true) {
+    responses.push("SPECS");
+  } else {
+    responses.push("NO SPECS");
+  }
+  console.log(responses);
+  return responses;
+}
 
 // Alert/confirmation boxes - check if they want each type of character.
 // Could probably do this in one function, and save the results as an array. 
@@ -94,4 +125,5 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+// passwordButton.addEventListener("click", writePassword);
+passwordButton.addEventListener("click", queryUser);
