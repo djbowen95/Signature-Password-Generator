@@ -2,12 +2,25 @@
 const passwordButton = document.querySelector("#generate");
 const passwordDisplay = document.querySelector("#password");
 
-const characterTypes = ["capital letters", "lowercase letters", "numeric characters", "special characters"];
-const characterStrings = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz", "0123456789", `!"#$%&'()*,-./:;<=>?@[]^_{}|~`];
+const characterTypes = [
+  "capital letters",
+  "lowercase letters",
+  "numeric characters",
+  "special characters",
+];
+const characterStrings = [
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "abcdefghijklmnopqrstuvwxyz",
+  "0123456789",
+  `!"#$%&'()*,-./:;<=>?@[]^_{}|~`,
+];
 
 // Query the user for desired password length.
 const getLength = () => {
-  let userInput = prompt("How many characters would you like? Please pick a number between 8 and 128.", "8");
+  let userInput = prompt(
+    "How many characters would you like? Please pick a number between 8 and 128.",
+    "8"
+  );
   if (userInput >= 8 && userInput <= 128) {
     return userInput;
   } else {
@@ -33,61 +46,27 @@ const queryUser = () => {
 const generatePassword = () => {
   let responses = queryUser();
   let chosenCharacters = "";
-  for (let i = 0; i < 4; i++) { // 4 because storing length in array at moment.
+  let generatedPassword = "";
+
+  for (let i = 0; i < 4; i++) {
+    // 4 because storing length in array at moment.
     if (responses[i] === true) {
-      console.log(characterStrings[i]);
-    chosenCharacters = chosenCharacters.concat(characterStrings[i]);
-  };
-}
-console.log(chosenCharacters);
-}
+      chosenCharacters = chosenCharacters.concat(characterStrings[i]);
+    }
+  }
 
-// Function to check at least one type of character is chosen. 
-function checkSomethingChosen() {
-}
+  for (let i =0; i < responses[4]; i++) {
+    let randomNumber = Math.floor(Math.random() * chosenCharacters.length);
+    let randomLetter = chosenCharacters.substring(randomNumber, (randomNumber + 1));
+    generatedPassword = generatedPassword.concat(randomLetter);
+  }
 
-// //Add all desired characters into a single string value.
-// function selectCharacters() {
-//   let addCaps = checkCapitals();
-//   let chosenCharacters = "";
-//   if (addCaps === true) {
-//     const passwordCapitals = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-//     chosenCharacters = chosenCharacters.concat(passwordCapitals);
-//   }
-//   let addLower = checkLower();
-//   if (addLower === true) {
-//     const passwordLowercase = "abcdefghijklmnopqrstuvwxyz";
-//     chosenCharacters = chosenCharacters.concat(passwordLowercase);
-//   }
-//   let addDigits = checkDigits();
-//   if (addDigits === true) {
-//     const passwordDigits = "0123456789";
-//     chosenCharacters = chosenCharacters.concat(passwordDigits);
-//   }
-//   let addSpecials = checkSpecials();
-//   if (addSpecials === true) {
-//     const passwordSpecialCharacters = "!\"#$%&'()*,-./:;<=>?@[]^_`{}|~";
-//     chosenCharacters = chosenCharacters.concat(passwordSpecialCharacters);
-//   }
-//   return chosenCharacters;
-// }
+  console.log(generatedPassword);
+  return generatedPassword;
+};
 
-
-// Randomize a password of chosenLength from character pool of selectCharacters;
-// function generatePassword() {
-//   let chosenCharacters = selectCharacters();
-//   let chosenLength = chooseLength();
-//   let totalCharOptions = chosenCharacters.length;
-  
-//   let password = "";
-//   for (let passLength = 0; passLength < chosenLength; passLength++) {
-//     let randNum = Math.random() * totalCharOptions;
-//     let randChoice = Math.floor(randNum);
-//     let newCharacter = chosenCharacters.substring(randChoice, randChoice + 1);
-//     password = password.concat(newCharacter);
-//   }
-//   return password;
-// }
+// Function to check at least one type of character is chosen.
+function checkSomethingChosen() {}
 
 // Write password to the #password input
 function writePassword() {
