@@ -8,8 +8,7 @@
 }
 
 html,
-body,
-.wrapper {
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -70,6 +69,8 @@ body {
   linear-gradient(90deg, rgb(205, 0, 255), rgb(205, 0, 255));
   background-color: blue;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav {
@@ -97,18 +98,17 @@ nav li {
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  border: solid white 1px;
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  width: 75%;
+  height: 45%;
+  box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 10px 4px;
   font-size: 18px;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 30px 40px;
+  align-self: center;
 
 }
-
+/* 
 .card-body {
   min-height: 100px;
 }
@@ -175,7 +175,7 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
-}
+} */
 
 @media (max-width: 690px) {
   .btn {
@@ -192,5 +192,11 @@ button[disabled] {
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-links {
+    display: none;
   }
 }
