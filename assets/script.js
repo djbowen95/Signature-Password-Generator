@@ -3,31 +3,18 @@ const passwordButton = document.querySelector("#generate");
 const passwordDisplay = document.querySelector("#password");
 
 const characterTypes = ["capital letters", "lowercase letters", "numeric characters", "special characters"];
-const include = ["CAPS", "LOWS", "NUMS", "SPECS"];
-const dontInclude = ["NO CAPS", "NO LOWS", "NO NUMS", "NO SPECS"];
+
 
 const queryUser = () => {
   let responses = [];
-  if (confirm("Do you want to include capital letters?") === true) {
-    responses.push("CAPS");
-  } else {
-    responses.push("NO CAPS");
+  for (let i = 0; i < characterTypes.length; i++) {
+    if (confirm(`Do you want to include ${characterTypes[i]}?`) === true) {
+      responses.push(true);
+    } else {
+      responses.push(false);
+    }
   }
-  if (confirm("Do you want to include lowercase leters?") === true) {
-    responses.push("LOWS");
-  } else {
-    responses.push("NO LOWS");
-  }
-  if (confirm("Do you want to include numerical characters?") === true) {
-    responses.push("NUMS");
-  } else {
-    responses.push("NO NUMS");
-  }
-  if (confirm("Do you want to include special characters?") === true) {
-    responses.push("SPECS");
-  } else {
-    responses.push("NO SPECS");
-  }
+
   console.log(responses);
   return responses;
 }
