@@ -106,17 +106,17 @@ nav li {
   box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 10px 4px;
   font-size: 18px;
   align-self: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-/* 
+
 .card-body {
   min-height: 100px;
 }
 
-.card-footer {
-  text-align: center;
-}
-
+/* 
 .card-footer::before {
   content: " ";
   display: block;
@@ -131,18 +131,19 @@ nav li {
   clear: both;
 }
 
-.btn {
+*/
+
+.generate-button {
   border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
-  display: inline-block;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
   font-size: 22px;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 4px 4px 10px 4px;
   padding: 14px 34px;
+  display: inline-block;
   text-align: center;
   cursor: pointer;
 }
@@ -152,9 +153,7 @@ button[disabled] {
   background: #c0c7cf;
 }
 
-.float-right {
-  float: right;
-}
+/*
 
 #password {
   -webkit-appearance: none;
