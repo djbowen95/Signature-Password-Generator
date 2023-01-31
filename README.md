@@ -1,6 +1,6 @@
 # Signature: Secure Password Generator
 
-Deployed link: https://djbowen95.github.io/SignaturePassGen/
+Deployed link: https://djbowen95.github.io/Signature-Password-Generator/
 
 ## Description
 This is a secure password generator, built with HTML, JavaScript and CSS. It uses the JavaScript Math library to generate random numbers, and select characters from arrays, putting them together in a string which it returns to the user. The user can select which types of characters they would like to include in their password (Numbers, Lowercase, Uppercase, Special) and the length of their password.  
@@ -30,7 +30,7 @@ I am currently working on a rebuild of this application, functioning on giving i
 This is a small portfolio project design to show my personal grasp of the fundamentals of HTML, CSS and JavaScript, and as such, I am not looking for pull requests / collaborative contributions. I do, however, welcome any suggestions of small upgrades or features I could integrate into my existing application. Please feel free to submit suggestions as an issue if you would like to contribute an idea.
 
 ## Version History
-### 1.0 BootCamp Project
+### 1.0.0 BootCamp Project
 I want to keep a short account of what the project looked like when I first built it here. I have some images in the 'development images' folder to add when I fill out this section. 
 
 ## Questions

@@ -136,6 +136,7 @@ nav li {
   color: white;
 }
 
+/* This is messy because using textarea, either replace or learn its properties */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
