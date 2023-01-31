@@ -2,18 +2,8 @@
 const passwordButton = document.querySelector("#generate");
 const passwordDisplay = document.querySelector("#password");
 
-const characterTypes = [
-  "capital letters",
-  "lowercase letters",
-  "numeric characters",
-  "special characters",
-];
-const characterStrings = [
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  "abcdefghijklmnopqrstuvwxyz",
-  "0123456789",
-  `!"#$%&'()*,-./:;<=>?@[]^_{}|~`,
-];
+const characterTypes = ["capital letters","lowercase letters", "numeric characters","special characters"];
+const characterStrings = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklmnopqrstuvwxyz", "0123456789", `!"#$%&'()*,-./:;<=>?@[]^_{}|~`];
 
 // Query the user for desired password length.
 const getLength = () => {
@@ -35,47 +25,55 @@ const queryUser = () => {
   for (let i = 0; i < characterTypes.length; i++) {
     if (confirm(`Do you want to include ${characterTypes[i]}?`) === true) {
       responses.push(true);
+      atLeastOne = true;
     } else {
       responses.push(false);
     }
   }
+
+  // Check at least one character type is added, or add CAPs.
+  if (responses[0] === false && responses[1] === false && responses[2] == false && responses [3] == false) {
+  // if (responses === [false, false, false, false]) { Would be tidier, but doesn't work. Maybe needs to be Async? 
+    responses[0] = true;
+    alert("You must pick at least one character type. We have selected capitals for you.")
+  }
+
   responses.push(getLength());
   return responses;
 };
 
-const generatePassword = () => {
+// Generate a randomised password based on the query responses. 
+const generatePassword = () => { // Should make this into two functions.
   let responses = queryUser();
-  let chosenCharacters = "";
-  let generatedPassword = "";
-
+  
+  // Create a string containing a pool of all the characters that user has requested.
+  let characterPool = "";
   for (let i = 0; i < 4; i++) {
     // 4 because storing length in array at moment.
     if (responses[i] === true) {
-      chosenCharacters = chosenCharacters.concat(characterStrings[i]);
+      characterPool = characterPool.concat(characterStrings[i]);
     }
   }
 
+  // Select random characters from the pool until generated password is desired length.
+  let generatedPassword = "";
   for (let i =0; i < responses[4]; i++) {
-    let randomNumber = Math.floor(Math.random() * chosenCharacters.length);
-    let randomLetter = chosenCharacters.substring(randomNumber, (randomNumber + 1));
+    let randomNumber = Math.floor(Math.random() * characterPool.length);
+    let randomLetter = characterPool.substring(randomNumber, (randomNumber + 1));
     generatedPassword = generatedPassword.concat(randomLetter);
   }
 
-  console.log(generatedPassword);
   return generatedPassword;
 };
 
 // Function to check at least one type of character is chosen.
 function checkSomethingChosen() {}
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
+// Run the generate password function, then write to the HTML container.
+const displayNewPassword = () => {
+  const password = generatePassword();
+  passwordDisplay.value = password;
 }
 
-// Add event listener to generate button
-// passwordButton.addEventListener("click", writePassword);
-passwordButton.addEventListener("click", generatePassword);
+// Event listener for the 'generate password' button. 
+passwordButton.addEventListener("click", displayNewPassword);
