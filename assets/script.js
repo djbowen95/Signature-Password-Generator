@@ -4,7 +4,18 @@ const passwordDisplay = document.querySelector("#password");
 
 const characterTypes = ["capital letters", "lowercase letters", "numeric characters", "special characters"];
 
+// Query the user for desired password length.
+const getLength = () => {
+  let userInput = prompt("How many characters would you like? Please pick a number between 8 and 128.", "8");
+  if (userInput >= 8 && userInput <= 128) {
+    return userInput;
+  } else {
+    alert("Invalid Input. We will give you a default password of length 8.");
+    return 8;
+  }
+};
 
+// Query the user for desired character types.
 const queryUser = () => {
   let responses = [];
   for (let i = 0; i < characterTypes.length; i++) {
@@ -14,35 +25,9 @@ const queryUser = () => {
       responses.push(false);
     }
   }
-
+  responses.push(getLength());
   console.log(responses);
   return responses;
-}
-
-// Alert/confirmation boxes - check if they want each type of character.
-// Could probably do this in one function, and save the results as an array. 
-function checkCapitals() {
-  if (confirm("Do you want to include capital letters?") == true) {
-    return true;
-  } else {return false}
-};
-
-function checkLower() {
-  if (confirm("Do you want to include lowercase letters?") == true) {
-    return true;
-  } else {return false}
-}
-
-function checkDigits() {
-  if (confirm("Do you want to include numbers?") == true) {
-    return true;
-  } else {return false}
-}
-
-function checkSpecials() {
-  if (confirm("Do you want to include special characters?") == true) {
-    return true;
-  } else {return false}
 }
 
 // Function to check at least one type of character is chosen. 
@@ -75,17 +60,6 @@ function selectCharacters() {
   return chosenCharacters;
 }
 
-// Create / store the users input for chosen length.
-// Must be more than 8 and less than 128. 
-function chooseLength() {
-  let userInput = prompt("How many characters would you like? Please pick a number between 8 and 128.", "8");
-  if (userInput >= 8 && userInput <= 128) {
-    return userInput;
-  } else {
-    alert("Invalid Input. We will give you a default password of length 8.");
-    return 8;
-  }
-}
 
 // Randomize a password of chosenLength from character pool of selectCharacters;
 function generatePassword() {
