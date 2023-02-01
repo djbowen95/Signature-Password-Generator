@@ -1,10 +1,13 @@
-<h1 align="center"> ✍️🔒 Signature 🔒✍</h1>
+<h1 align="center"> ✍️🔒 Signature Password Generator 🔒✍</h1>
 <h2 align="center"> Secure Password Generator. <i> Version 1.0.0 </i> </h2>
-<strong>Signature</strong> is a randomised password generator that allows users to create and customise a secure password whenever they need one. Built in vanilla JavaScript and housed in a simple HTML5/CSS3 web page, it queries the user with a series of dialogue prompts - asking them which character types they would like to include (lowercase letters, uppercase letters, numbers and special characters) and the length of password they require. It then returns the password and displays it on the webpage for them.  
-<br><br>
-This project was built for the University of Birmingham Coding Bootcamp, in the third week of the course, and the first full-stack JavaScript project I made. It is fairly simple - do take a look at my profile for more complex projects I've built since!
-<br><br>
-You can find it deployed here: https://djbowen95.github.io/Signature-Password-Generator/
+<div align="center">
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/djbowen95/Signature-Password-Generator?style=flat-square">
+<img alt="GitHub" src="https://img.shields.io/github/license/djbowen95/Signature-Password-Generator?style=flat-square">
+<a href="https://djbowen95.github.io/Signature-Password-Generator/" target="blank"><img alt="Deployed" src="https://img.shields.io/badge/live%20deployment-click%20here!-blue?style=flat-square&logo=github"></a>
+</div>
+<strong>Signature Password Generator</strong> is a simple web application that generates secure, random passwords. It is built in <strong>JavaScript</strong>, with simple functions that use the <strong><em>built in Math library</em></strong> and <strong><em>assorted array methods</em></strong> to provide users with a <strong><em>unique character string</em></strong>. The user interface is built in  <strong>HTML</strong> and <strong>CSS<em> with responsive design</em></strong>: it uses <strong><em>flexbox</em></strong> and <strong><em>media queries</em></strong> to achieve a great user experience on any device.<br/><br/>
+
+This project was built for the <strong><em>University of Birmingham and 2U/Trilogy Web Development Coding Bootcamp</em></strong>, in the third week of the course. It is a very simple project; I've built far more complex applications since...but I'd still love you take a look at <strong><em>my very first JavaScript project</em></strong>, and read about the things I learned on my first steps towards becoming a <strong><em>full-stack developer</em></strong>.
   
 ## Table of Contents
 - [Key Features](#key-features)
