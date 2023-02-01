@@ -22,15 +22,28 @@ I plan to expand on this with short summaries of the features this project demon
 - Iterators / array methods (concat especially)
 - Browser compatible JavaScript (no modularisation)
 
-## Contribution
-This is a small portfolio project design to show my personal grasp of the fundamentals of HTML, CSS and JavaScript, and as such, I am not looking for pull requests / collaborative contributions. I do, however, welcome any suggestions of small upgrades or features I could integrate into my existing application. Please feel free to submit suggestions as an issue if you would like to contribute an idea.
-
 ## Version History
 ### 1.0.0 BootCamp Project
 I want to keep a short account of what the project looked like when I first built it here. I have some images in the 'development images' folder to add when I fill out this section. 
 
-## Questions
-If you have any questions about this project, please contact me at:  
-Email: djbowen95@gmail.com  
-GitHub: [djbowen95](https://github.com/djbowen95)  
-LinkedIn: [Daniel Bowen](https://www.linkedin.com/in/daniel-bowen-6266ba191/)
+## Contribution
+This is a small portfolio project that was designed to demonstrate my understanding of fundamental HTML, JavaScript and CSS. I have a few more ideas for its development but I would generally consider it finished.
+
+I am not actively seeking collaborative contribution but I am always open to hearing ideas! If there's a feature you'd like to see, or you'd like to help build, I'd love to hear your idea. Please open an issue and outline it! I'll be sure to get back to you as soon as I can.
+
+To take a look at my other projects, or reach out to me more generally, please use one of the links below: 
+<div align="center">
+           <a href="mailto:djbowen95@gmail.com" target="blank">
+              <img src="https://img.shields.io/badge/email-e4572e?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgOTYgOTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTkwIDEySDZhNS45OTcgNS45OTcgMCAwIDAtNiA2djYwYTUuOTk3IDUuOTk3IDAgMCAwIDYgNmg4NGE1Ljk5NyA1Ljk5NyAwIDAgMCA2LTZWMThhNS45OTcgNS45OTcgMCAwIDAtNi02Wm0tNiAxMnYyLjUxOUw0OCA0Ny4wOTIgMTIgMjYuNTE5VjI0Wk0xMiA3MlY0MC4zMzhMNDUuMDIzIDU5LjIxYTUuOTk2IDUuOTk2IDAgMCAwIDUuOTU0IDBMODQgNDAuMzM5VjcyWiIgZmlsbD0iI2ZmZmZmZiIgY2xhc3M9ImZpbGwtMDAwMDAwIj48L3BhdGg+PC9zdmc+"
+                   alt="Click to Email" height="30"/>
+            </a>
+            <a href="https://www.linkedin.com/in/daniel-bowen-6266ba191/" target="blank">
+              <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin"
+                   alt="LinkedIn Profile" height="30"/>
+            </a> 
+            <a href="https://github.com/djbowen95" target="blank">
+              <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github"
+                   alt="LinkedIn Profile" height="30"/>
+            </a> 
+           
+</div>
