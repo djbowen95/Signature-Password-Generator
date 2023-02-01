@@ -74,13 +74,13 @@ body {
 }
 
 nav {
-  background-color: black;
+  background-color: rgb(58, 58, 58);
+  opacity: 80%;
   color: white;
   position: absolute;
   display: flex;
   justify-content: space-between;
-  padding: 5px;
-  border: solid white 2px;
+  padding: 8px;
   width: 100%;
 }
 
@@ -94,7 +94,6 @@ nav li {
   display: inline;
   padding: 0px;
   margin: 0px;
-  border: solid white 1px;
 }
 
 .card {
