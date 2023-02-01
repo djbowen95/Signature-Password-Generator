@@ -30,9 +30,7 @@ I plan to expand on this with short summaries of the features this project demon
 I want to keep a short account of what the project looked like when I first built it here. I have some images in the 'development images' folder to add when I fill out this section. 
 
 ## Contribution
-This is a small portfolio project that was designed to demonstrate my understanding of fundamental HTML, JavaScript and CSS. I have a few more ideas for its development but I would generally consider it finished.
-
-I am not actively seeking collaborative contribution but I am always open to hearing ideas! If there's a feature you'd like to see, or you'd like to help build, I'd love to hear your idea. Please open an issue and outline it! I'll be sure to get back to you as soon as I can.
+This is a small portfolio project and while I have a few more ideas for its development, I would generally consider it to be finished. I am not actively seeking collaborative contribution but I am always open to hearing ideas! If there's a feature you'd like to see, or you'd like to help build, I'd love to hear your idea. Please open an issue and outline it! I'll be sure to get back to you as soon as I can.
 
 To take a look at my other projects, or reach out to me more generally, please email me at <strong>djbowen95@gmail.com</strong> or use one of the links below: 
 <div align="center">
