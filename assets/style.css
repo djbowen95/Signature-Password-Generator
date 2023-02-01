@@ -103,7 +103,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color:rgb(60, 134, 163);
+  color:rgb(255, 46, 22);
 }
 
 .card {
@@ -141,7 +141,7 @@ nav li a:hover {
 }
 
 .generate-button:hover {
-  background-color: grey;
+  background-color: rgb(255, 46, 22);
   color: white;
 }
 
