@@ -75,7 +75,8 @@ body {
 
 nav {
   background-color: rgb(58, 58, 58);
-  opacity: 80%;
+  box-shadow:0px 8px 24px 0px rgba(0, 0, 0);
+  opacity: 90%;
   color: white;
   position: absolute;
   display: flex;
